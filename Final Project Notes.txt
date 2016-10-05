@@ -1,0 +1,1 @@
+Final Project Notes- The site is responsive. Try resizing the window to see responsiveness.

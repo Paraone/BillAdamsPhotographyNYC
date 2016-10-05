@@ -1,0 +1,108 @@
+/*slideshow styles*/
+.slide{
+	opacity: 0;
+	color: #fff;
+	background-size: 100%;
+	text-align: justify;
+	margin: 0 auto;
+	width: 900px;
+	height: 500px;
+	overflow: hidden;
+}
+.slide img{
+	z-index: 100;
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 100%;
+}
+.slide .text{
+	z-index: 200;
+	font-family: 'Varela', helvetica;
+	font-size: 1.4em;
+	padding: 30px;
+	background: linear-gradient(top, rgba(0, 0, 0, .8) 60%,rgba(0, 0, 0, 0) );
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, .8) 60%,rgba(0, 0, 0, 0));
+	background: -o-linear-gradient(top, rgba(0, 0, 0, .8) 60%,rgba(0, 0, 0, 0));
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, .8) 60%,rgba(0, 0, 0, 0));
+	background: -ms-linear-gradient(top, rgba(0, 0, 0, .8) 60%,rgba(0, 0, 0, 0));
+	position: relative;
+	height: 100px;
+	top: -255px;
+	margin-bottom: 0px;
+}
+h2{
+	z-index: 300;
+	position: relative;
+	font-size: 2em;
+	font-family: 'Marko One', serif;
+	top: -255px;
+	left: 60px;
+	text-shadow: black .1em .1em .1em;
+}
+h2 a{
+	text-decoration: none;
+	color: #fff;
+}
+h2 a:hover{
+	text-decoration: underline;
+}
+#dots{
+	width: 100%;
+	text-align: center;
+	margin: 10px auto 0 auto;
+	font-size: 2em;
+}
+.dot{
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;	
+}
+.fading{
+	-webkit-animation: fading 10s;
+	animation: fading 10s;
+}
+@-webkit-keyframes fading{
+	0%{opacity:0}
+	10%{opacity: 1}
+	100%{opacity: 1}
+}
+@keyframes fading{
+	0%{opacity:0}
+	10%{opacity: 1}
+	100%{opacity: 1}
+}
+.slideLeft, .slideRight{
+	border-radius: 25px;
+	height: 100px;
+	width: 200px;
+	color: #500;
+	position: relative;
+	font-size: 3em;
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+.slideLeft:hover, .slideRight:hover{
+	color: #555;
+}
+.inline{
+	display: inline;
+}
+@media screen and (max-width: 600px){
+	.slide{
+		width: auto;
+		height: 300px;
+	}
+	.slide h2{
+		top: -335px;
+	}
+	.slide .text{
+		display: none;
+	}
+}

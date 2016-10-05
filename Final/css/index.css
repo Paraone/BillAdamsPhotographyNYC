@@ -1,0 +1,138 @@
+body{
+	font-family: 'Varela', helvetica;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	color: white;
+	text-align: center;
+}
+h1{
+	font-family: 'Ultra', serif;
+	margin: 10px;
+	padding: 0;
+	font-size: 4.8em;
+	text-shadow: 3px 3px 4px #444;
+}
+.allContent{
+	width: 100%;
+}
+header{
+	position: relative;
+	z-index: 1000;
+}
+h1 a{
+	text-decoration: none;
+	color: #500;
+}
+h1 a span{
+	font-family: 'Yellowtail', cursive;
+}
+footer{
+	border-top: 5px solid #555;
+	margin-top: 10px;
+	background: #aaa;
+	color: #555;
+}
+#mainContent{
+	margin-top: 20px;
+	background: #fff;
+	color: #000;
+}
+
+#footArea{
+	text-align: center;
+	margin: 10px auto 0 auto;
+	width: 1000px;
+}
+.footLeft, .footRight{
+	text-align: left;
+	display: inline-block;
+	width: 300px;
+}
+.footLeft{
+	border-right: 1px dotted #555;
+}
+.footRight{
+}
+.footLeft ul{
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+	display: inline-block;
+}
+.footLeft li{
+	list-style: none;
+	padding: 0;
+	margin: 10px;
+	margin-top: 0;
+}
+.footLeft li a{
+	text-decoration: none;
+	color: #555;
+	transition: color .5s;
+}
+.footLeft li a:hover{
+	text-decoration: underline;
+	color: black;
+}
+.footLeft img{
+	width: 35px;
+	height: 35px;
+}
+.footRight{
+	padding-left: 20px;
+}
+.mainLowerDiv{
+	margin: 0;
+	margin-top: 40px;
+	padding: 0;
+	display: inline-block;
+	margin: 0 10px;
+}
+.mainLowerDiv a{
+	text-decoration: none;
+	color: black;
+	transition: color 1s;
+	-webkit-transition: color 1s;
+	-moz-transition: color 1s;
+	-o-transition: color 1s;
+	-ms-transition: color 1s;
+}
+.mainLowerDiv a:hover{
+	color: red;
+}
+.mainLowerDiv img{
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	height: 260px;
+
+}
+.mainLowerDiv img:hover{
+	box-shadow: 5px 5px 5px #555;
+}
+.left{
+	align: left;
+}
+.right{
+	align: right;
+}
+.clear{
+	clear: both;
+}
+@media screen and (max-width: 600px){
+	h1{
+		font-size: 3em;
+	}
+	#footArea{
+		width: 100%;
+	}
+	.footRight, .footLeft{
+		width: 40%;
+		font-size: 13px;
+	}
+	.footLeft li{
+		margin: 2px;
+		margin-top: 0px;
+	}
+}

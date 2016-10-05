@@ -1,0 +1,51 @@
+table{
+	margin: 0 auto;
+	width: 280px;
+}
+tr{
+	padding: 0;
+	margin: 0;
+}
+th{
+	padding: 5px;
+	margin:0;
+	border: #aaa dotted 1px;
+}
+.centered{
+	text-align: center;
+}
+.tableLeft{
+	width: 40%;
+	text-align: right;
+}
+.tableLeft div{
+	position: relative;
+	top: 0;
+	right: 0;
+}
+.tableRight{
+	width: 60%;
+	text-align: left;
+}
+input:focus{
+	background-color: #ddf;
+	color: #fff;
+}
+input[type=submit]{
+	background: #a00;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+input[type=submit]:hover{
+	background: #000;
+}
+textarea{
+	resize: none;
+	width: 140px;
+	height: 140px;
+}
+textarea:focus{
+	color: #fff;
+	background-color: #ddf;
+}

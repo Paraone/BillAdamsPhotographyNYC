@@ -1,0 +1,31 @@
+#info{
+	margin: 0 auto;
+	max-width: 600px;
+}
+#info img{
+	width: 260px;
+	height: 200px;
+}
+#info p{
+	text-align: justify;
+	padding: 20px;
+}
+.imgHolder{
+	margin: 0 auto;
+	width: 260px;
+	height: 200px;
+	overflow: hidden;
+	text-align: left;
+}
+.imgHolder img{
+	position: relative;
+	top: -300px;
+	left: 0;
+	transition: top 1s ease;
+}
+@media screen and(max-width: 600px){
+	#info{
+		max-width: 600px;
+		padding: 0 15px 0 15px;
+	}
+}
