@@ -29,7 +29,7 @@ th{
 }
 input:focus{
 	background-color: #ddf;
-	color: #fff;
+	color: #000;
 }
 input[type=submit]{
 	background: #a00;
@@ -46,6 +46,6 @@ textarea{
 	height: 140px;
 }
 textarea:focus{
-	color: #fff;
+	color: #000;
 	background-color: #ddf;
 }
