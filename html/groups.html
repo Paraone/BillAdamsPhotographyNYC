@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Contact Info: Bill Adams Photography NYC</title>
+	<title>Group Photos by Bill Adams NYC</title>
 	<link rel="stylesheet" type="text/css" href="../css/index.css">
 	<link rel="stylesheet" type="text/css" href="../css/dropdown.css">
-	<link rel="stylesheet" type="text/css" href="../css/contact.css">
+	<link rel="stylesheet" type="text/css" href="../css/slideshow.css">
+	<link rel="stylesheet" type="text/css" href="../css/portfolio.css">
 	<link href="https://fonts.googleapis.com/css?family=Marko+One|Ultra|Varela|Yellowtail" rel="stylesheet">
 </head>
 <body>
 <div class="allContent">
 	<header>
-		<h1><a href="index.html">Bill Adams <span>Photography</span></a></h1>
+		<h1><a href="../index.html">Bill Adams <span>Photography</span></a></h1>
 		<ul>
-			<li><a href="index.html">Home</a></li>
+			<li><a href="../index.html">Home</a></li>
 			<li><a href="about.html">About</a></li>
 			<li class="dropdown">
 				<div class="dropbtn">Portfolios</div>
@@ -28,48 +29,23 @@
 	</header>
 	<div id="scroll">
 		<div id="mainContent">
-			<div id="contact">
-				<h3>-Contact-</h3>
-				<form>
-					<table>
-						<tr>
-							<th class="tableLeft">Phone:</th>
-							<th class="tableRight">(718) 555-4318</th>
-						</tr>
-						<tr>
-							<th colspan="2" class="centered">badams06@gmail.com</th>
-						</tr>
-						<tr>
-							<th colspan="2" class="centered">Send an e-mail</th>
-						</tr>
-						<tr>
-							<th class="tableLeft">Name:</th>
-							<th class="tableRight"><input type="text" name="name"></th>
-						</tr>
-						<tr>
-							<th class="tableLeft">E-mail:</th>
-							<th class="tableRight"><input type="email" name="email"></th>
-						</tr>
-						<tr>
-							<th class="tableLeft">Subject:</th>
-							<th class="tableRight"><input type="text" name="subject"></th>
-						</tr>
-						<tr>
-							<th class="tableLeft"><div>Message:</div></th>
-							<th class="tableRight"><textarea></textarea></th>
-						</tr>
-						<tr>
-							<th colspan="2" class="centered"><input type="submit" name="submit" value="Send"></th>
-						</tr>
-					</table>
-				</form>
+			<h3>-Groups-</h3>
+			<div class="photos">
+				<div id="photoHolder">
+					<ul>
+						<li><img class="photo" src="../images/groups/biggroupth.jpg"></li>
+						<li><img class="photo" src="../images/groups/billboardth.jpg"></li>
+						<li><img class="photo" src="../images/groups/boysth.jpg"></li>
+						<li><img class="photo" src="../images/groups/treeth.jpg"></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<footer>
 			<div id="footArea">
-				<div class="footLeft"> 
+				<div class="footLeft">
 					<ul>
-						<li><a href="index.html">Home</a></li>
+						<li><a href="../index.html">Home</a></li>
 						<li><a href="about.html">About</a></li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
@@ -85,14 +61,26 @@
 						<li><a href="#"><img src="../images/facebook.png"></a></li>
 					</ul>
 				</div>
-				<div class="footRight"> 
+				<div class="footRight">
 				&copy;Bill Adams NYC
 				</div>
 			</div>
 		</footer>
-			<div class="clear"></div>
+		<div id="imageSlideshow">
+			<a class="slideLeft inline" onclick="moveSlide(-1)">&#9754;</a>
+			<div id="dots" class="inline">PlaceHolder</div>
+			<a class="slideRight inline" onclick="moveSlide(1)">&#9755;</a>
+			<div id="mainSlide">
+				<div id="close">&times;</div>
+				<img src="../images/groups/biggroup.jpg" alt="Image Here" class="slide fading">
+				<img src="../images/groups/billboard.jpg" alt="Image Here" class="slide fading">
+				<img src="../images/groups/boys.jpg" alt="Image Here" class="slide fading">
+				<img src="../images/groups/tree.jpg" alt="Image Here" class="slide fading">
+			</div>
+		</div>
 	</div>
 </div>
 <script type="text/javascript" src="../js/slideshow.js"></script>
+<script type="text/javascript" src="../js/portfolio.js"></script>
 </body>
 </html>
